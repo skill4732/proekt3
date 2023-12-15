@@ -1,0 +1,73 @@
+html {overflow-x: hidden;}
+body {margin: 0; padding: 0; font-family: sefif; font-size: 16px;}
+p {padding: 5px;}
+a, a:hover, a:active, a:visited {outline: none;}
+#links {font-size: 12px; position: fixed; top: calc(50% - 65px); right: 1%; z-index: 2;}
+#links li {list-style-type: circle;}
+#links a, a:hover, a:active, a:visited {color: black;}
+#links-ul li {margin-bottom: 1px; padding: 0; cursor: pointer;}
+#container {width: 100%;}
+#container-child {width: 1000px; margin: 0 auto;}
+.center, .center b, .center input, .center img, #top-img {margin: auto; text-align: center;}
+#header {background: url(/lending/images/header.jpg) no-repeat #756a58; text-shadow: 0 3px 6px black; background-size: cover; background-position: center; height: 800px;}
+#header, footer {text-align: center;}
+#header-text {position: relative; top: 120px; margin: 0 auto; color: white; text-shadow: 0 4px 6px black; height: 60px;}
+#header-bg {width: 100%; height: 800px; position: absolute; top: 0; left: 0;}
+#grad {position: relative; top: 320px; height: 100px; width: 100%; background: linear-gradient(to top, white 0%, transparent 100%); z-index: 1;}
+.pos {margin: 80px auto; position: relative;}
+#slider {height: 400px; margin: auto; box-shadow: 0 0 30px black;}
+#slides {width: 600px; height: 400px; overflow: hidden; position: relative;}
+#slides-ul {position: absolute; left: 0; top: 0; height: 400px; margin: 0; padding: 0;}
+.slide {width: 600px; height: 400px; float: left; list-style: none; margin: 0; padding: 0;}
+.sl1 {background: url(/lending/images/slide1.jpg) no-repeat; background-size: cover;}
+.sl2 {background: url(/lending/images/slide2.jpg) no-repeat; background-size: cover;}
+.sl3 {background: url(/lending/images/slide3.jpg) no-repeat; background-size: cover;}
+.sl4 {background: url(/lending/images/slide4.jpg) no-repeat; background-size: cover;}
+#prev-slide {position: relative; left: -170px; bottom: 264px;}
+#next-slide {position: relative; right: -510px; bottom: 264px;}
+#left-arr:hover, #right-arr:hover {border-radius: 63px; background: #E8CACA;}
+#left-arr:active, #right-arr:active {border-radius: 63px; background: #DEB8B9;}
+.left-text, .right-text, .box-text, .single-text {text-align: center; margin: auto auto;}
+.left-text, .right-text {font-size: 20px; text-shadow: 0 10px 10px black;}
+.left-text {text-align: left; float: left;}
+.right-text {text-align: right; float: right;}
+.left-image {float: left; position: relative; left: 0;}
+.right-image {float: right; position: relative; right: 0;}
+.bred {color: #A17878;}
+.img {box-shadow: 0 0 20px black;}
+.box-content {height: 250px; width: 250px; margin: 20px; padding: 0; background: #E3C1C1; border-radius: 10px; box-shadow: 0 0 8px black; transition: all 0.5s linear;}
+.box-content:hover {border: 1px solid black; box-shadow: 0 0 0 black;}
+.box-content:active {border: 1px solid white;}
+.box-content img {margin-top: 40px; margin-bottom: 20px;}
+.box-inset {width: 100%; height: 100%; margin: 0; padding: 0; border-radius: 10px; box-shadow: 0 0 0 black inset; transition: all 0.5s linear;}
+.box-inset:hover {box-shadow: 0 0 8px black inset;}
+.rotate-img {transform: rotate(0deg); transition: transform 0.5s ease-out;}
+.rotate-img:hover {transform: rotate(360deg);}
+#contacts {position: absolute; top: 303px; left: 40px;}
+#contacts img, #github-img {display: block; margin-bottom: 10px; clear: both; opacity: 0.5;}
+#contacts img:hover, #github-img:hover {opacity: 0.8;}
+#contacts img:active, #github-img:active {opacity: 1;}
+#github-link {position: absolute; top: 95px; right: 40px;}
+#skype-box {position: fixed; left: calc(50% - 100px); top:-20%; width: 200px; height: 130px; padding: 5px; border-radius: 10px; box-shadow: 0 0 10px black inset; background: #EDD3D3; display: none; opacity: 0; z-index: 2;}
+#skype-text {width: 170px; height: 30px; padding: 3px; margin-top: 20px; border: 1px solid #B58988; color: black; background: #D6B7B6; text-align: center; font-size: 12px; border-radius: 6px; text-shadow: 0 2px 4px black;}
+#skype-text:hover {border: 1px solid #4D0A09; background: #AB6665; color: #EDD1D1;}
+#skype-close {width: 80px; height: 30px; margin-top: 10px; border: 1px solid #9E5251; border-radius: 6px; color: black; background: #B58988; text-align: center; font-size: 12px; cursor: pointer;}
+#skype-close:hover {border: 1px solid #B86D6C; background: #C29C9B;}
+#skype-close:active {box-shadow: 0 0 4px black inset; background: #AD807F; border: 1px solid #8F3C3B;}
+#pos1, #pos3 {right: -150%; opacity: 0;}
+#pos2, #pos6 {left: -150%; opacity: 0;}
+#pos4, #pos5 {width: 0%; opacity: 0;}
+#pos6 {padding: 10px; box-shadow: 0 0 4px black inset; text-shadow: 0 3px 6px black; border-radius: 20px; background: #EBEBEB;}
+#pos6 img {margin: 20px; box-shadow: 0 0 8px black; border: 1px solid black; border-radius: 4px; width: 0px; transition: all 0.5s ease;}
+#pos6 img:hover {border: 1px solid white;}
+#pos6 img:active {border: 1px solid red;}
+#top-img {cursor: pointer;}
+#image-box {position: fixed; left: calc(50% - 400px); bottom: -150%; width: 800px; height: 500px; padding: 5px 5px 5px 37px; background: #D9BDBD; border: 1px solid #B55151; border-radius: 10px; box-shadow: 0 0 30px black; opacity: 0; display: none; z-index: 2;}
+#ib-close {float: right; opacity: 0.7; cursor: pointer;}
+#ib-close:hover {opacity: 0.8;}
+#ib-close:active {opacity: 1;}
+#ib-show {margin-top: 40px; max-width: 750px; max-height: 400px; border: 1px solid black; border-radius: 10px;}
+#ib-open {width: 100px; height: 30px; color: black; font-size: 14px; border: 1px solid #C93E3E; border-radius: 4px; background: #DB6B6B; box-shadow: 0 0 6px black; padding: 5px; margin-top: 10px; cursor: pointer;}
+#ib-open:hover {border: 1px solid #D45757; background: #E38181;}
+#ib-open:active {border: 1px solid #BF3030; background: #D66060; box-shadow: 0 0 6px black inset;}
+footer {font-size: 12px; margin: 20px auto; width: 400px; padding: 5px; background: #F2E4E4; border: 1px dashed #D4B6B6; border-radius: 6px;}

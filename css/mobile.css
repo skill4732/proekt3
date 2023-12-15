@@ -1,0 +1,15 @@
+@media handheld, projection, print, all and (min-height: 1100px) {
+    #header {background: url(/lending/images/header-mob.jpg) no-repeat #756a58; background-size: cover; background-position: center;}
+    .mid {float: none !important; clear: both; display: block; margin: 20px auto !important;}
+    .cont-img, #pos1, #pos2, #pos3, #pos4, #pos5, #pos6 {opacity: 1 !important;}
+    #contacts {left: 10px !important;}
+    #github-ling {right: 10px !important;}
+    #pos1, #pos2, #pos3, #pos6 {left: 0 !important; right: 0 !important;}
+    #pos4, #pos5 {width: 100% !important;}
+    #pos6 img {width: 260px !important;}
+    #links {display: none !important;}
+}
+@media all and (max-width: 1000px) {
+    .box-content {width: 200px !important;}
+    .box-content img {margin-top: 15px !important;}
+}

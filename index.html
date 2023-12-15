@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <title>Пример лендинга от InterVi</title>
+        <meta name='description' content='Пример лендинга от InterVi со всякими красивыми штуками.' />
+        <meta name='keywords' content='лендинг, lending' />
+        <link rel='shortcut icon' type='image/x-icon' href='/lending/images/favicon.ico' />
+        <link rel='stylesheet' href='/lending/css/bootstrap.min.css' />
+        <link rel='stylesheet' id='main-style' href='/lending/css/style.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='main-style' href='/lending/css/mobile.css' type='text/css' media='all' />
+    </head>
+    <body>
+        <div id='links'>
+            <ul id='links-ul'>
+                <li id='lheader' style='list-style-type: disc !important;'></li>
+                <li id='lpos1'></li>
+                <li id='lpos2'></li>
+                <li id='lpos3'></li>
+                <li id='lpos4'></li>
+                <li id='lpos5'></li>
+                <li id='lpos6'></li>
+            </ul>
+        </div>
+        <a href='https://github.com/InterViPortfolio' target='_blank' id='github-link'><img src='/lending/images/github.png' id='github-img' class='rotate-img cont-img' alt='InterVi github' /></a>
+        <div id='contacts'>
+            <a href='mailto:intervionly@gmail.com' target='_blank' id='mail-link'><img src='/lending/images/mail.png' class='rotate-img cont-img' alt='InterVi email' /></a>
+            <a href='https://vk.com/id453972649' target='_blank' id='vk-link'><img src='/lending/images/vk.png' class='rotate-img cont-img' alt='InterVi VK' /></a>
+            <a href='javascript: void(0)' onclick='showSkype()' id='skype-link'><img src='/lending/images/skype.png' class='rotate-img cont-img' alt='InterVi skype' /></a>
+        </div>
+        <div id='skype-box'>
+            <div class='center'>
+                <b id='skype-title'>Skype логин</b><br/>
+                <input id='skype-text' type='text' value='intervionly@gmail.com' onclick='this.select()' />
+                <input id='skype-close' type='button' value='Закрыть' onclick='closeSkype()' />
+            </div>
+        </div>
+        <div id='image-box'>
+            <img id='ib-close' src='/lending/images/close.png' alt='Close' onclick='closeImageBox()' />
+            <div class='center'>
+                <img id='ib-show' src='/lending/images/sadcat.jpg' alt='Show image zone' /><br/>
+                <input id='ib-open' type='button' value='Открыть' onclick='window.open("/lending/images/sadcat.jpg")' />
+            </div>
+        </div>
+        <div id='container' class='container-fluid'>
+            <div id='header' class='row'>
+                <div id='header-text'>
+                    <h1>Пример лендинга</h1>
+                    Здесь применён <b class='bred'>Bootstrap</b> и <b class='bred'>JQuery</b>.
+                </div>
+                <div id='grad'></div>
+            </div>
+            <div id='container-child' class='container'>
+                <div id='pos1' class='pos row'>
+                    <div id='slider'>
+                        <div id='slides'>
+                            <ul id='slides-ul' data-current=0>
+                                <li class='slide sl1'></li>
+                                <li class='slide sl2'></li>
+                                <li class='slide sl3'></li>
+                                <li class='slide sl4'></li>
+                            </ul>
+                        </div>
+                        <a href='javascript: void(0)' id='prev-slide' class='arrows'><img src='/lending/images/left.png' id='left-arr' alt='Left' /></a>
+                        <a href='javascript: void(0)' id='next-slide' class='arrows'><img src='/lending/images/right.png' id='right-arr' alt='Right' /></a>
+                    </div>
+                </div>
+                <div id='pos2' class='pos row'>
+                    <div class='left-text mid'>
+                        <p>Лендинг - стильно, модно, молодёжно!</p>
+                    </div>
+                    <div class='right-image mid'>
+                        <img src='/lending/images/arrow.jpg' class='img' alt='Arrow' />
+                    </div>
+                </div>
+                <div id='pos3' class='pos row'>
+                    <div class='left-image mid'>
+                        <img src='/lending/images/copter.jpg' class='img' alt='Quadrocopter' />
+                    </div>
+                    <div class='right-text mid'>
+                        <p>Все хотят лендинг, чтобы продажи взлетели.</p>
+                    </div>
+                </div>
+                <div id='pos4' class='pos row'>
+                    <div class='box-text col-md-4'>
+                        <div class='box-content'>
+                            <div class='box-inset'>
+                                <img src='/lending/images/11.png' class='box-icon' alt='Clip' />
+                                <p id='out'>Надеюсь, код смотреть не будете.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='box-text col-md-4'>
+                        <div class='box-content'>
+                            <div class='box-inset'>
+                                <img src='/lending/images/5.png' class='box-icon' alt='Diamond' />
+                                <p>Норм сверстал!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='box-text col-md-4'>
+                        <div class='box-content'>
+                            <div class='box-inset'>
+                                <img src='/lending/images/17.png' class='box-icon' alt='Camera' />
+                                <p>А картинки скачаны. Самому рисовать долго.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='pos5' class='pos row'>
+                    <div class='box-text col-md-4'>
+                        <div class='box-content'>
+                            <div class='box-inset'>
+                                <img src='/lending/images/31.png' class='box-icon' alt='Mug' />
+                                <p>Сделано за несколько вечеров.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='box-text col-md-4'>
+                        <div class='box-content'>
+                            <div class='box-inset'>
+                                <img src='/lending/images/22.png' class='box-icon' alt='Anchor' />
+                                <p>Тут есть вон та штука сбоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='box-text col-md-4'>
+                        <div class='box-content'>
+                            <div class='box-inset'>
+                                <img src='/lending/images/8.png' class='box-icon' alt='Coin' />
+                                <p>Вы хотите это купить!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='pos6' class='pos row'>
+                    <div class='single-text'>
+                        <h2>Вот вам котики!</h2>
+                        <a href='/lending/images/cat1-big.jpg' target='_blank'><img src='/lending/images/cat1.jpg' alt='Cat 1' /></a>
+                        <a href='/lending/images/cat2-big.jpg' target='_blank'><img src='/lending/images/cat2.jpg' alt='Cat 2' /></a>
+                        <a href='/lending/images/cat3-big.jpg' target='_blank'><img src='/lending/images/cat3.jpg' alt='Cat 3' /></a>
+                        <br/>
+                        <a href='/lending/images/cat4-big.jpg' target='_blank'><img src='/lending/images/cat4.jpg' alt='Cat 4' /></a>
+                        <a href='/lending/images/cat5-big.jpg' target='_blank'><img src='/lending/images/cat5.jpg' alt='Cat 5' /></a>
+                        <a href='/lending/images/cat6-big.jpg' target='_blank'><img src='/lending/images/cat6.jpg' alt='Cat 6' /></a>
+                    </div>
+                </div>
+                <div id='pos7' class='pos row'>
+                    <img src='/lending/images/top.png' class='rotate-img' id='top-img' alt='Go top' />
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id='copyright'>Copyright <b>InterVi</b> 2017</div>
+            <div id='contact_link'>Contact: <a href='mailto:intervionly@gmail.com'>intervionly@gmail.com</a></div>
+        </footer>
+        <script src='/lending/js/jquery-3.2.1.min.js'></script>
+        <script src='/lending/js/jqueryrotate.min.js' type='text/javascript'></script>
+        <script src='/lending/js/device.min.js' type='text/javascript'></script>
+        <script src='/lending/js/jquery.inview.min.js' type='text/javascript'></script>
+        <script src='/lending/js/main.js' type='text/javascript'></script>
+        <script src='/lending/js/mobile.js' type='text/javascript'></script>
+    </body>
+</html>
